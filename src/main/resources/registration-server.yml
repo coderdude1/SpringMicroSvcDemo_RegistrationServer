@@ -5,6 +5,9 @@ eureka:
   client:  # Not a client, don't register with yourself
     registerWithEureka: false
     fetchRegistry: false
+  server:
+    enable-self-preservation: false #EMERGENCY! EUREKA MAY BE INCORRECTLY CLAIMING INSTANCES ARE UP WHEN THEY'RE NOT. RENEWALS ARE LESSER THAN THRESHOLD AND HENCE THE INSTANCES ARE NOT BEING EXPIRED JUST TO BE SAFE.
+
 
 server:
   port: 1111   # HTTP (Tomcat) port  default Eureka is 8761
