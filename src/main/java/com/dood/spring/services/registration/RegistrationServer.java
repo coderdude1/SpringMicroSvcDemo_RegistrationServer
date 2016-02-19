@@ -4,12 +4,12 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.netflix.eureka.server.EnableEurekaServer;
 
-@SpringBootApplication
-@EnableEurekaServer
 /**
  * Create and run a Eurkea registration server (opensourced by netflix).  This is similar
  * to an RMI or corba registry
  */
+@SpringBootApplication
+@EnableEurekaServer
 public class RegistrationServer {
 	/**
 	 * Run the application using Spring Boot and an embedded servlet engine.
